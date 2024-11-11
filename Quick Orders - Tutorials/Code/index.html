@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tutorial Guide</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" onclick="loadTutorial(0)">
+            <img src="assets/img/logo.png" alt="Quick Orders Logo" />
+            <div class="logo_text">Quick Orders Guide</div>
+        </div>
+        
+        <ul class="nav-links">
+            <li onclick="loadTutorial(0)"><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="container" >
+        <div style="padding: 20px; gap: 3px; display: flex; flex-direction: column;">
+            <div class="sidebar-title">Tutorial Guides</div>
+            <aside class="sidebar" id="sidebar">
+
+            </aside>    
+        </div>
+        
+        <main class="content" id="main-content">
+            <div id="home-content" class="hero">
+                <h2>QuickOrders Interactive Tutorial Guide</h2>
+                <p>Please follow the following steps to get started in the QuickOrders App</p>
+                <button onclick="loadTutorial(1)">Start Tutorial 1</button>
+            </div>
+            
+            <div id="tutorial-content" class="tutorial-tiles" style="display: none;">
+                
+            </div>
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </div>
+        <p>© 2024 ARRIS FOR INFORMATION TECHNOLOGY</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
